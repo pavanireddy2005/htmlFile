@@ -22,7 +22,7 @@ h3 {
     font-size: 1.5em;
 }
 .center-img {
-    display: block;
+    /* display: block; */
     margin: 0 auto;
     border: 2px solid black;
 }
