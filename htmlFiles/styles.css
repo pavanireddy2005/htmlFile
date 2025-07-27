@@ -1,0 +1,35 @@
+#travel {
+    background: linear-gradient(to right, #7cb0d0, #59da95);
+    font-family: Arial, sans-serif;
+    color: #333;
+    border: 2px solid black ;
+}
+h1 {
+    text-align: center;
+    color: #e80e15;
+    font-size: 2.5em;
+}
+h2 {
+    color: #a51dd7;
+    font-size: 2em;
+}
+p {
+    font-size: 1.em;
+    line-height: 1.2;
+}
+h3 {
+    color: #ed1f71;
+    font-size: 1.5em;
+}
+.center-img {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 20px;
+}
+    
