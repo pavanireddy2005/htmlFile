@@ -3,19 +3,24 @@ body {
     margin: 0%;
     padding: 0%;
 }
-.restaurant-list {
+
+h1 {
+    text-align: center;
+    color: #000000;
+    font-size: 36px;
+    margin-top: auto;
+    margin: 0;
+
+}
+.customUnderlinecontainer {
     display: flex;
     justify-content: center;
-    h1{
-        color: #000000;
-        font-size: 36px;
-        font-weight: bold;
-    }
-    .restaurantunderline {
-    width: 80px;
-    height: 5px;
-    background-color: #e61919;
-    border-radius: 5px;
+    margin-bottom: 20px;
+    .customUnderline {
+        width: 100px;
+        height: 5px;
+        background-color: #e61919;
+        border-radius: 5px;
     }
 }
 
