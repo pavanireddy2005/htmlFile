@@ -1,20 +1,23 @@
 body {
     background-color: rgb(179, 194, 207);
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
 
 .main-section {
-    height: 700px;
+    height: auto;
+    min-height: 700px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px 0 0;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
 .about-content {
     flex: 1;
     max-width: 50%;
+    padding: 10px;
 }
 
 .about-content h1 {
@@ -33,26 +36,95 @@ body {
 }
 
 .banner-image {
-    width:50%;
-    height: 50%;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .banner-image img {
     width: 100%;
-    height: auto;
     max-width: 600px;
     height: auto;
     border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 footer {
     background-color: #070707;
     color: white;
     text-align: center;
     padding: 15px;
     font-size: 14px;
-    a{
-        color: #1804f4;
-        text-decoration: none;
+}
+
+footer a {
+    color: #1804f4;
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-content {
+        max-width: 80%;
+    }
+
+    .about-content h1 {
+        font-size: 30px;
+    }
+
+    .about-content p {
+        font-size: 17px;
+        margin-right: 0;
+    }
+
+    .banner-image {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .banner-image img {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-section {
+        padding: 10px;
+    }
+
+    .about-content {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .about-content h1 {
+        font-size: 26px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .banner-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .banner-image img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px;
     }
 }
